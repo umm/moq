@@ -1,0 +1,27 @@
+{
+  "name": "@umm/moq",
+  "version": "1.0.0",
+  "description": "Moq library for C#",
+  "homepage": "https://github.com/umm/moq",
+  "bugs": {
+    "url": "https://github.com/umm/moq/issues"
+  },
+  "scripts": {
+    "umm:init": "umm-init",
+    "umm:generate_assembly_definition": "umm-generate_assembly_definition",
+    "umm:module:install": "umm-module-install",
+    "umm:module:uninstall": "umm-module-uninstall",
+    "postinstall": "npm run --silent umm:module:install",
+    "postuninstall": "npm run --silent umm:module:uninstall"
+  },
+  "author": "Clarius Consulting, Manas Technology Solutions, InSTEDD",
+  "license": "BSD-3",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:umm/moq"
+  },
+  "dependencies": {
+    "@umm/scripts": "umm/scripts#^1.0.0"
+  },
+  "devDependencies": {}
+}
